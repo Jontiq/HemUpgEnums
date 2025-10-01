@@ -12,6 +12,11 @@
             Book book1 = new Book("Mio min mio", "Astrid Lindgren", 144);
             string book1Info = book1.GetBookInfo();
             Console.WriteLine(book1Info);
+
+            Rectangle rectangle1 = new Rectangle(100, 500);
+
+            double rectangle1Area = rectangle1.Area;
+            Console.WriteLine($"Area of rectangle: {rectangle1Area}m2");
         }
     }
 }
