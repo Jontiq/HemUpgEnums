@@ -9,8 +9,46 @@ namespace HemUpgEnums
     internal class Person
     {
         //Props
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        private string _firstName;
+        public string FirstName 
+        {
+            get 
+            {
+                return _firstName;
+            }
+            set 
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    Console.WriteLine("Invalid first name, cannot be null or whitespace.");
+                    _firstName = "Unknown";
+                }
+                else
+                {
+                    _firstName = value;
+                }
+            } 
+        }
+        private string _lastName;
+        public string LastName
+        {
+            get
+            {
+                return _lastName;
+            }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    Console.WriteLine("Invalid last name, cannot be null or whitespace.");
+                    _lastName = "Unknown";
+                }
+                else
+                {
+                    _lastName = value;
+                }
+            }
+        }
         private int _age;
         public int Age
         {
