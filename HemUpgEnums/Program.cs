@@ -8,6 +8,10 @@
 
             string fullNamePerson1 = person1.GetFullName();
             Console.WriteLine(fullNamePerson1);
+
+            Book book1 = new Book("Mio min mio", "Astrid Lindgren", 144);
+            string book1Info = book1.GetBookInfo();
+            Console.WriteLine(book1Info);
         }
     }
 }
