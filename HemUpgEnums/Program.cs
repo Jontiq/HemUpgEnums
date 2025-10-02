@@ -1,4 +1,6 @@
-﻿namespace HemUpgEnums
+﻿using System.Drawing;
+
+namespace HemUpgEnums
 {
     internal class Program
     {
@@ -17,6 +19,9 @@
 
             double rectangle1Area = rectangle1.Area;
             Console.WriteLine($"Area of rectangle: {rectangle1Area}m2");
+
+            Task task = new Task(Task.Colors.red, Task.Priorities.high);
+            task.GetTaskInfo();
         }
     }
 }
