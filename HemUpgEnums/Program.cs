@@ -22,6 +22,9 @@ namespace HemUpgEnums
 
             Task task = new Task(Task.Colors.red, Task.Priorities.high);
             task.GetTaskInfo();
+
+            User user = new User(User.UserRole.Guest);
+            user.PrintRoleMessage();
         }
     }
 }
